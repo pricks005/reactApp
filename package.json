@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "ng": "ng",
-    "start": "node --max_old_space_size=8192 node_modules/@angular/cli/bin/ng serve --o --port=5200 --poll=2000",
     "build": "ng build && npm run optimize",
     "watch": "ng build --watch --configuration development",
     "optimize": "./optimize.sh",
