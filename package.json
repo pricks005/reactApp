@@ -2,13 +2,12 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "ng": "ng",
-    "build": "ng build && npm run optimize",
-    "watch": "ng build --watch --configuration development",
-    "optimize": "./optimize.sh",
-    "test": "ng test"
-  },
+ "scripts": {
+  "build": "react-scripts build && npm run optimize",
+  "watch": "react-scripts start",
+  "optimize": "./optimize.sh",
+  "test": "react-scripts test"
+},
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
