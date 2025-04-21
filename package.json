@@ -2,12 +2,18 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
- "scripts": {
-  "build": "react-scripts build && npm run optimize",
-  "watch": "react-scripts start",
-  "optimize": "./optimize.sh",
-  "test": "react-scripts test"
-},
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "scripts": {
+    "postinstall": "npm install react-scripts",
+    "build": "react-scripts build && npm run optimize",
+    "start": "react-scripts start",
+    "watch": "react-scripts start",
+    "optimize": "./optimize.sh",
+    "test": "react-scripts test"
+  },
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
