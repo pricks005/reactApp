@@ -7,7 +7,7 @@
     "npm": ">=8.0.0"
   },
   "scripts": {
-    "build": "react-scripts build && npm run optimize",
+    "build": "react-scripts build",
     "start": "react-scripts start",
     "watch": "react-scripts start",
     "optimize": "./optimize.sh",

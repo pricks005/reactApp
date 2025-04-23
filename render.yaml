@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: my-react-app
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: build
+    envVars:
+      - key: NODE_VERSION
+        value: 18
+      - key: BUN_INSTALL
+        value: "0"
